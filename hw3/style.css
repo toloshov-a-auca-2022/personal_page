@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+#title {
+    padding: 20px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#about img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#fav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+#wish {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+h3 {
+    color: darkblue;
+}
