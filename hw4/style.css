@@ -4,27 +4,36 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
   background: url("https://cdn.imgchest.com/files/w7pjcw6e27p.png") no-repeat center center;
   background-size: cover;
-  opacity: 0.5;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1400px;
-  margin: 0 auto;
-}
+  max-width: 1000px;  
 
-.container > * {
-  flex-grow: 1;
-  flex-basis: 300px;
+.container > div {
+  flex: 1 1 33.33%;    
+  height: 200px;
   background-color: lightblue;
-  font-size: 10rem;
-  color: purple;
   border: 2px dashed purple;
+  color: purple;
+  font-size: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+}
+
+
+.box4,
+.box5 {
+  flex: 1 1 50%;
+}
+
+.box6 {
+  flex: 1 1 100%;
+}
+
 }
