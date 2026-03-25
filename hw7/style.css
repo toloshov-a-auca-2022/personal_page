@@ -19,10 +19,10 @@ body {
 
 .container {
     display: grid;
-    width: 551px;
+    width: 1250px;
     margin: 0 auto;
-    grid-template-columns: 95px 202px 254px;
-    grid-template-rows: 49px 27px 22px 198px 65px 637px;
+    grid-template-columns: 212px 456px 578px;
+    grid-template-rows: 112px 66px 51px 437px 155px 1130px;
     grid-template-areas:
         "one seven eight"
         "two two two"
