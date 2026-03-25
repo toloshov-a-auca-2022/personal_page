@@ -6,15 +6,21 @@
 body {
     background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png);
     background-repeat: no-repeat;
-    max-width: 1143px;
+    background-position: top center;
     min-height: 1583px;
     font-size: 2rem;
     opacity: .5;
     color: blue;
 }
 
+.container > * {
+    border: 2px dashed blue;
+}
+
 .container {
     display: grid;
+    width: 551px;
+    margin: 0 auto;
     grid-template-columns: 95px 202px 254px;
     grid-template-rows: 49px 27px 22px 198px 65px 637px;
     grid-template-areas:
