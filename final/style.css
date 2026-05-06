@@ -1,0 +1,562 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background: #f2f2f2;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #1a73c8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#styleSwitcher {
+  text-align: center;
+  padding: 5px;
+  background: #333;
+}
+
+#styleSwitcher button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 5px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+#styleSwitcher button:hover {
+  background: #c62b35;
+}
+
+#hamburgerBtn {
+  display: none;
+}
+
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  display: grid;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box2"
+    "box3 box3"
+    "box4 box6"
+    "box5 box6"
+    "box7 box7"
+    "box8 box8"
+    "box9 box9";
+  grid-template-columns: 1fr 200px;
+}
+
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.box7 { grid-area: box7; }
+.box8 { grid-area: box8; }
+.box9 { grid-area: box9; }
+
+
+.box1 {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 12px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area img {
+  height: 36px;
+  width: auto;
+}
+
+.logo-fallback {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.header-links a {
+  color: #555;
+}
+
+.btn-post {
+  background: #e63946;
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-post:hover {
+  background: #c62b35;
+  text-decoration: none !important;
+}
+
+.box2 {
+  background: #1a3a5c;
+  padding: 0;
+}
+
+.box2 nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.box2 nav a {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.box2 nav a:hover {
+  background: #0f2840;
+  text-decoration: none;
+}
+
+.nav-highlight {
+  background: #e63946;
+  font-weight: bold;
+}
+
+.nav-highlight:hover {
+  background: #c62b35 !important;
+}
+
+.nav-highlight2 {
+  background: #2979b0;
+  font-weight: bold;
+}
+
+.nav-highlight2:hover {
+  background: #1e5f8a !important;
+}
+
+
+.box3 {
+  background: #eaf2fb;
+  padding: 8px 10px;
+  border-bottom: 2px solid #1a73c8;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.search-bar select {
+  flex: 1;
+  min-width: 100px;
+  padding: 6px 4px;
+  border: 1px solid #c0d8ef;
+  border-radius: 3px;
+  font-size: 12px;
+  background: #fff;
+  color: #333;
+}
+
+.search-btn {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #c62b35;
+}
+
+
+.box4 {
+  background: #1a3a5c;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #1a3a5c 0%, #0f2840 100%);
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+}
+
+.hero-text h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hero-text p {
+  font-size: 12px;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.hero-btn {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.box5 {
+  background: #fff;
+  padding: 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #1a73c8;
+  padding-bottom: 5px;
+}
+
+.section-header h3 {
+  font-size: 14px;
+  color: #1a3a5c;
+}
+
+.section-header a {
+  font-size: 11px;
+  color: #1a73c8;
+}
+
+.car-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.car-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.car-img-placeholder {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.car-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 5px;
+}
+
+.car-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+}
+
+.car-price {
+  font-size: 11px;
+  color: #e63946;
+  font-weight: bold;
+}
+
+
+.box6 {
+  background: #f9f9f9;
+  padding: 8px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.side-ad {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ad-box {
+  border-radius: 4px;
+}
+
+.box7 {
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.marketplace-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.stat-item {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.stat-item a {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  color: #1a73c8;
+}
+
+.stat-item span {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.box8 {
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.car-type-links {
+  display: flex;
+  gap: 8px;
+}
+
+.car-type-links a {
+  font-size: 11px;
+}
+
+.used-car-listings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.listing-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.listing-img {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.listing-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-info {
+  padding: 6px;
+}
+
+.listing-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+}
+
+.listing-price {
+  font-size: 13px;
+  color: #e63946;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.listing-detail {
+  font-size: 10px;
+  color: #777;
+}
+
+
+.box9 {
+  background: #1a3a5c;
+  padding: 20px 12px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 120px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  display: block;
+  color: #aac4e0;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    grid-template-areas:
+      "box1"
+      "box3"
+      "box4"
+      "box5"
+      "box7"
+      "box8"
+      "box9";
+    grid-template-columns: 1fr;
+  }
+
+  .box6 {
+    display: none;
+  }
+
+  .box2 {
+    display: none;
+  }
+
+  #hamburgerBtn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    color: #1a3a5c;
+    cursor: pointer;
+  }
+
+  .box2.mobileMenu {
+    display: block;
+    position: fixed;
+    top: 42px;
+    right: 10px;
+    z-index: 1000;
+    background: #1a3a5c;
+    width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .box2.mobileMenu nav {
+    flex-direction: column;
+  }
+
+  .box2.mobileMenu nav a {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .car-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .used-car-listings {
+    grid-template-columns: 1fr;
+  }
+
+  .marketplace-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box1 {
+    padding-right: 48px;
+  }
+
+  .header-links {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .btn-post {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

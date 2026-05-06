@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 9</title>
+  <link rel="stylesheet" href="style.css" id="styleSheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+ 
+<button id="hamburgerBtn"><i class="fa fa-bars"></i></button>
+ 
+<div id="styleSwitcher">
+  <button onclick="switchStyle()">Switch Style</button>
+</div>
+ 
+<div class="container">
+ 
+  <div class="box1">
+    <div class="header-top">
+      <div class="logo-area">
+        <img src="https://mashina.kg/static/img/logo.png" alt="Mashina.kg Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+        <span class="logo-fallback" style="display:none; font-size:22px; font-weight:bold; color:#e63946;">🚗 mashina.kg</span>
+      </div>
+      <div class="header-links">
+        <a href="#">Вход</a>
+        <a href="#">Регистрация</a>
+        <a href="#" class="btn-post">+ Добавить объявление</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box2" id="mainMenu">
+    <nav>
+      <a href="#">Легковые</a>
+      <a href="#">Коммерческие</a>
+      <a href="#">Мото</a>
+      <a href="#">Автобусы</a>
+      <a href="#">Запчасти</a>
+      <a href="#">Услуги</a>
+      <a href="#">Купить</a>
+      <a href="#">Проверить авто</a>
+      <a href="#" class="nav-highlight">НОВОЕ АВТО</a>
+      <a href="#" class="nav-highlight2">РЕК. ПЛОЩАДКИ</a>
+    </nav>
+  </div>
+ 
+  <div class="box3">
+    <div class="search-bar">
+      <select><option>Марка любая</option><option>Toyota</option><option>BMW</option><option>Mercedes</option></select>
+      <select><option>Модель любая</option></select>
+      <select><option>Год от</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option></select>
+      <select><option>Год до</option><option>2023</option><option>2024</option><option>2025</option></select>
+      <select><option>Цена от</option><option>5000</option><option>10000</option></select>
+      <select><option>Цена до</option><option>20000</option><option>50000</option></select>
+      <button class="search-btn"><i class="fa fa-search"></i> Найти</button>
+    </div>
+  </div>
+ 
+  <div class="box4">
+    <div class="hero-banner">
+      <img src="https://mashina.kg/static/img/banner_placeholder.jpg" alt="Banner" onerror="this.style.display='none'"/>
+      <div class="hero-text">
+        <h2>Продать и купить авто в Кыргызстане</h2>
+        <p>Новые и б/у автомобили от дилеров и частных лиц</p>
+        <button class="hero-btn">Новое авто</button>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box5">
+    <div class="section-header">
+      <h3>Новые авто из салонов</h3>
+      <a href="#">Смотреть всё &rsaquo;</a>
+    </div>
+    <div class="car-cards">
+      <div class="car-card">
+        <div class="car-img-placeholder" style="background:#cce4ff;">
+          <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.drom.ru%2Fcatalog%2Fhyundai%2Fpalisade%2Fg_2022_18659%2F&ved=0CBYQjRxqFwoTCLjn4rqepZQDFQAAAAAdAAAAABAG&opi=89978449" alt="Hyundai Palisade" />
+        </div>
+        <div class="car-info">
+          <p class="car-name">Hyundai Palisade</p>
+          <p class="car-price">от $42,000</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <div class="car-img-placeholder" style="background:#d4f0d4;">
+          <img src="https://lalafo.kg/_next/image?url=https%3A%2F%2Fimg5.lalafo.com%2Fi%2Fposters%2Fapi%2F3a%2F82%2F3b%2F2e9fc85bc5447990f347537eb4.jpeg&w=384&q=75" alt="Toyota Camry" />
+        </div>
+        <div class="car-info">
+          <p class="car-name">Toyota Camry</p>
+          <p class="car-price">от $28,000</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <div class="car-img-placeholder" style="background:#ffe8cc;">
+          <img src="https://www.kia.com/content/dam/kia/us/en/vehicles/sportage/2026/mep/in-page-gallery/my26-sportage-ice-mep-gallery-1.jpg" alt="Kia Sportage" />
+        </div>
+        <div class="car-info">
+          <p class="car-name">Kia Sportage</p>
+          <p class="car-price">от $25,000</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <div class="car-img-placeholder" style="background:#f0d4f0;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Chevrolet_Equinox_LT_%28III%2C_Facelift%29_–_f_05102022.jpg" alt="Chevrolet Equinox" />
+        </div>
+        <div class="car-info">
+          <p class="car-name">Chevrolet Equinox</p>
+          <p class="car-price">от $22,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box6">
+    <div class="side-ad">
+      <div class="ad-box" style="background:#1a3a5c; color:white; padding:10px; margin-bottom:10px; border-radius:4px;">
+        <p style="font-size:11px;">Новый</p>
+        <p style="font-weight:bold;">Hyundai PALISADE</p>
+        <p style="font-size:11px;">Демонстрационный автомобиль</p>
+        <button style="background:#e63946; color:white; border:none; padding:4px 8px; font-size:11px; cursor:pointer; margin-top:5px;">Подробнее</button>
+      </div>
+      <div class="ad-box" style="background:#f5f5f5; border:1px solid #ddd; padding:10px; border-radius:4px;">
+        <p style="font-size:11px; font-weight:bold;">Проверьте недвижимость на юридическую чистоту</p>
+        <button style="background:#4CAF50; color:white; border:none; padding:4px 8px; font-size:11px; cursor:pointer; margin-top:5px;">Узнать</button>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box7">
+    <div class="section-header">
+      <h3>Автобazar.kg</h3>
+      <a href="#">Все объявления &rsaquo;</a>
+    </div>
+    <div class="marketplace-stats">
+      <div class="stat-item">
+        <a href="#">Avtobazar.kg</a>
+        <span>17487 объявлений</span>
+      </div>
+      <div class="stat-item">
+        <a href="#">Нанобаza.kg</a>
+        <span>1261 объявлений</span>
+      </div>
+      <div class="stat-item">
+        <a href="#">Баналa</a>
+        <span>3040 объявлений</span>
+      </div>
+      <div class="stat-item">
+        <a href="#">AVTO TRADING</a>
+        <span>70 объявлений</span>
+      </div>
+      <div class="stat-item">
+        <a href="#">авторынок</a>
+        <span>139 объявлений</span>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box8">
+    <div class="section-header">
+      <h3>Легковые авто</h3>
+      <div class="car-type-links">
+        <a href="#">Новые</a>
+        <a href="#">Все легковые авто &rsaquo;</a>
+      </div>
+    </div>
+    <div class="used-car-listings">
+      <div class="listing-card">
+        <div class="listing-img" style="background:#ddd;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/2019_Toyota_RAV4_Adventure_%28facelift%2C_red%29%2C_front_8.2.19.jpg/240px-2019_Toyota_RAV4_Adventure_%28facelift%2C_red%29%2C_front_8.2.19.jpg" alt="Toyota RAV4"/>
+        </div>
+        <div class="listing-info">
+          <p class="listing-name">Toyota RAV4 2019</p>
+          <p class="listing-price">$23,500</p>
+          <p class="listing-detail">2.5L · Автомат · Полный привод</p>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img" style="background:#ddd;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2021_BMW_3_Series_330i_M_Sport_%28G20%2C_facelift%29%2C_front_8.1.21.jpg/240px-2021_BMW_3_Series_330i_M_Sport_%28G20%2C_facelift%29%2C_front_8.1.21.jpg" alt="BMW 3"/>
+        </div>
+        <div class="listing-info">
+          <p class="listing-name">BMW 3 Series 2021</p>
+          <p class="listing-price">$35,000</p>
+          <p class="listing-detail">2.0L · Автомат · Задний привод</p>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img" style="background:#ddd;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2019_Mercedes-Benz_GLE_300d_%28W167%29_AMG_Line_4MATIC_auto%2C_front_8.21.19.jpg/240px-2019_Mercedes-Benz_GLE_300d_%28W167%29_AMG_Line_4MATIC_auto%2C_front_8.21.19.jpg" alt="Mercedes GLE"/>
+        </div>
+        <div class="listing-info">
+          <p class="listing-name">Mercedes GLE 2019</p>
+          <p class="listing-price">$48,000</p>
+          <p class="listing-detail">3.0L · Автомат · Полный привод</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="box9">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Mashina.kg</h4>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <a href="#">Реклама</a>
+      </div>
+      <div class="footer-col">
+        <h4>Помощь</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Правила</a>
+        <a href="#">Безопасность</a>
+      </div>
+      <div class="footer-col">
+        <h4>Мы в соцсетях</h4>
+        <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+      </div>
+      <div class="footer-col">
+        <p style="font-size:12px; color:#999;">© 2024 Mashina.kg<br/>Все права защищены</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ 
+<script>
+
+  var currentStyle = 'style.css';
+  function switchStyle() {
+    var link = document.getElementById('styleSheet');
+    if (currentStyle === 'style.css') {
+      link.href = 'style2.css';
+      currentStyle = 'style2.css';
+    } else {
+      link.href = 'style.css';
+      currentStyle = 'style.css';
+    }
+  }
+ 
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var mainMenu = document.getElementById('mainMenu');
+  hamburgerBtn.addEventListener('click', function() {
+    mainMenu.classList.toggle('mobileMenu');
+  });
+</script>
+ 
+</body>
+</html>
