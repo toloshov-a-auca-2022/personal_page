@@ -1,252 +1,275 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignment 9</title>
-  <link rel="stylesheet" href="style.css" id="styleSheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Assignment 9</title>
+<link rel="stylesheet" href="style.css" id="styleSheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
  
 <button id="hamburgerBtn"><i class="fa fa-bars"></i></button>
  
 <div id="styleSwitcher">
-  <button onclick="switchStyle()">Switch Style</button>
+  <button onclick="var l=document.getElementById('styleSheet');l.href=l.href.includes('style2')?'style.css':'style2.css';">Switch Style</button>
 </div>
  
 <div class="container">
  
   <div class="box1">
-    <div class="header-top">
-      <div class="logo-area">
-        <img src="https://mashina.kg/static/img/logo.png" alt="Mashina.kg Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
-        <span class="logo-fallback" style="display:none; font-size:22px; font-weight:bold; color:#e63946;">🚗 mashina.kg</span>
-      </div>
-      <div class="header-links">
-        <a href="#">Вход</a>
-        <a href="#">Регистрация</a>
-        <a href="#" class="btn-post">+ Добавить объявление</a>
-      </div>
+    <div class="logo-wrap">
+      <div class="logo-diamond"><span>МТ</span></div>
+      <div class="logo-name">Мой<br>телефон</div>
+    </div>
+    <div class="phone-block">
+      <div class="phone-small">0312<br>0501<br>0770<br>0990</div>
+      <div class="phone-big">313111</div>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-ig"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="social-fb"><i class="fa fa-facebook"></i></a>
+    </div>
+    <div class="search-wrap">
+      <input type="text" placeholder="Galaxy S22"/>
+      <button class="search-btn-icon"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="header-icons">
+      <a href="#"><i class="fa fa-bar-chart"></i></a>
+      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      <a href="#"><i class="fa fa-user"></i></a>
     </div>
   </div>
  
   <div class="box2" id="mainMenu">
-    <nav>
-      <a href="#">Легковые</a>
-      <a href="#">Коммерческие</a>
-      <a href="#">Мото</a>
-      <a href="#">Автобусы</a>
-      <a href="#">Запчасти</a>
-      <a href="#">Услуги</a>
-      <a href="#">Купить</a>
-      <a href="#">Проверить авто</a>
-      <a href="#" class="nav-highlight">НОВОЕ АВТО</a>
-      <a href="#" class="nav-highlight2">РЕК. ПЛОЩАДКИ</a>
-    </nav>
+    <a href="#" class="nav-catalog">Catalog</a>
+    <a href="#">Salon addresses</a>
+    <a href="#">Stock</a>
+    <a href="#">Developments</a>
+    <a href="#">About company</a>
+    <a href="#">Guarantee</a>
+    <a href="#">Delivery</a>
+    <a href="#">Jobs</a>
+    <a href="#">Goods on credit</a>
   </div>
  
   <div class="box3">
-    <div class="search-bar">
-      <select><option>Марка любая</option><option>Toyota</option><option>BMW</option><option>Mercedes</option></select>
-      <select><option>Модель любая</option></select>
-      <select><option>Год от</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option></select>
-      <select><option>Год до</option><option>2023</option><option>2024</option><option>2025</option></select>
-      <select><option>Цена от</option><option>5000</option><option>10000</option></select>
-      <select><option>Цена до</option><option>20000</option><option>50000</option></select>
-      <button class="search-btn"><i class="fa fa-search"></i> Найти</button>
-    </div>
+    <a href="#">Phones</a>
+    <a href="#">Tablets</a>
+    <a href="#">Accessories</a>
+    <a href="#">Audio devices</a>
+    <a href="#">Gadgets</a>
+    <a href="#">Scooters</a>
+    <a href="#">Laptops and accessories</a>
+    <a href="#">For home</a>
+    <a href="#">TVs</a>
   </div>
  
   <div class="box4">
-    <div class="hero-banner">
-      <img src="https://mashina.kg/static/img/banner_placeholder.jpg" alt="Banner" onerror="this.style.display='none'"/>
-      <div class="hero-text">
-        <h2>Продать и купить авто в Кыргызстане</h2>
-        <p>Новые и б/у автомобили от дилеров и частных лиц</p>
-        <button class="hero-btn">Новое авто</button>
+    <div class="hero-slide">
+      <div class="hero-text-col">
+        <h1>КРЕДИТ ПО<br>ПАСПОРТУ<br>ЗА 5 МИНУТ*!</h1>
+        <p>Купи смартфон, ноутбук<br>или гаджет прямо сейчас!</p>
+        <button class="hero-btn">Подробнее</button>
+        <p class="hero-fine">* Проверка данных заемщика производится в режиме онлайн на основании сертификатов и портрета клиента.</p>
       </div>
+      <div class="hero-img-col">
+        <div class="bank-badge">🏦 БАНК БАЙ ТУШУМ</div>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span>
     </div>
   </div>
  
   <div class="box5">
-    <div class="section-header">
-      <h3>Новые авто из салонов</h3>
-      <a href="#">Смотреть всё &rsaquo;</a>
-    </div>
-    <div class="car-cards">
-      <div class="car-card">
-        <div class="car-img-placeholder" style="background:#cce4ff;">
-          <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.drom.ru%2Fcatalog%2Fhyundai%2Fpalisade%2Fg_2022_18659%2F&ved=0CBYQjRxqFwoTCLjn4rqepZQDFQAAAAAdAAAAABAG&opi=89978449" alt="Hyundai Palisade" />
-        </div>
-        <div class="car-info">
-          <p class="car-name">Hyundai Palisade</p>
-          <p class="car-price">от $42,000</p>
-        </div>
-      </div>
-      <div class="car-card">
-        <div class="car-img-placeholder" style="background:#d4f0d4;">
-          <img src="https://lalafo.kg/_next/image?url=https%3A%2F%2Fimg5.lalafo.com%2Fi%2Fposters%2Fapi%2F3a%2F82%2F3b%2F2e9fc85bc5447990f347537eb4.jpeg&w=384&q=75" alt="Toyota Camry" />
-        </div>
-        <div class="car-info">
-          <p class="car-name">Toyota Camry</p>
-          <p class="car-price">от $28,000</p>
-        </div>
-      </div>
-      <div class="car-card">
-        <div class="car-img-placeholder" style="background:#ffe8cc;">
-          <img src="https://www.kia.com/content/dam/kia/us/en/vehicles/sportage/2026/mep/in-page-gallery/my26-sportage-ice-mep-gallery-1.jpg" alt="Kia Sportage" />
-        </div>
-        <div class="car-info">
-          <p class="car-name">Kia Sportage</p>
-          <p class="car-price">от $25,000</p>
-        </div>
-      </div>
-      <div class="car-card">
-        <div class="car-img-placeholder" style="background:#f0d4f0;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Chevrolet_Equinox_LT_%28III%2C_Facelift%29_–_f_05102022.jpg" alt="Chevrolet Equinox" />
-        </div>
-        <div class="car-info">
-          <p class="car-name">Chevrolet Equinox</p>
-          <p class="car-price">от $22,000</p>
-        </div>
-      </div>
+    <div class="brand-bar">
+      <a href="#" class="brand-item brand-samsung">SAMSUNG</a>
+      <a href="#" class="brand-item brand-apple"><i class="fa fa-apple"></i> Apple</a>
+      <a href="#" class="brand-item brand-xiaomi">mi Xiaomi</a>
+      <a href="#" class="brand-item brand-realme">realme</a>
+      <a href="#" class="brand-item brand-jbl">JBL</a>
+      <a href="#" class="brand-item brand-tecno">TECNO</a>
     </div>
   </div>
  
   <div class="box6">
-    <div class="side-ad">
-      <div class="ad-box" style="background:#1a3a5c; color:white; padding:10px; margin-bottom:10px; border-radius:4px;">
-        <p style="font-size:11px;">Новый</p>
-        <p style="font-weight:bold;">Hyundai PALISADE</p>
-        <p style="font-size:11px;">Демонстрационный автомобиль</p>
-        <button style="background:#e63946; color:white; border:none; padding:4px 8px; font-size:11px; cursor:pointer; margin-top:5px;">Подробнее</button>
+    <div class="section-title-bar"><h2>New</h2></div>
+    <div class="products-grid">
+ 
+      <div class="product-card">
+        <div class="badge-credit">CREDIT</div>
+        <div class="product-img"><img src="https://login.kg/image/cache/catalog/new/Phones/Xiaomi/Redmi%2010A/1-500x400.jpg" alt="Xiaomi Redmi 10A" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#c8a882"></span>
+          <span class="dot-color" style="background:#222"></span>
+          <span class="dot-color" style="background:#4488bb"></span>
+        </div>
+        <div class="product-name">Xiaomi<br>Redmi 10A</div>
+        <div class="product-storage">3+64Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">10 490 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
       </div>
-      <div class="ad-box" style="background:#f5f5f5; border:1px solid #ddd; padding:10px; border-radius:4px;">
-        <p style="font-size:11px; font-weight:bold;">Проверьте недвижимость на юридическую чистоту</p>
-        <button style="background:#4CAF50; color:white; border:none; padding:4px 8px; font-size:11px; cursor:pointer; margin-top:5px;">Узнать</button>
+ 
+      <div class="product-card">
+        <div class="badge-credit">CREDIT</div>
+        <div class="product-img"><img src="https://www.myphone.kg/cache/files/18028.webp_w800_h800_resize.webp?t=1775837632" alt="Xiaomi Poco M5s" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#222"></span>
+          <span class="dot-color" style="background:#44aacc"></span>
+        </div>
+        <div class="product-name">Xiaomi<br>Poco M5s</div>
+        <div class="product-storage">6+128Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">16 490 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
       </div>
+ 
+      <div class="product-card">
+        <div class="badge-credit">CREDIT</div>
+        <div class="product-img"><img src="https://www.myphone.kg/cache/files/18476.webp_w800_h800_resize.webp?t=1775834110" alt="Xiaomi Poco M5" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#222"></span>
+        </div>
+        <div class="product-name">Xiaomi<br>Poco M5</div>
+        <div class="product-storage">6+128Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">14 990 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
+      <div class="product-card">
+        <div class="badge-cashback">CASH<br>BACK</div>
+        <div class="installment-badge">009</div>
+        <div class="product-img"><img src="https://myphone.kg/cache/files/14474.png_w800_h800_resize.png?t=1776009043" alt="Samsung Galaxy Tab A8" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#e8ddd0"></span>
+          <span class="dot-color" style="background:#c0bab4"></span>
+          <span class="dot-color" style="background:#888"></span>
+        </div>
+        <div class="product-name">Samsung<br>Galaxy Tab A8 10.5</div>
+        <div class="product-storage">128Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">25 990 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
+      <div class="product-card">
+        <div class="badge-cashback">CASH<br>BACK</div>
+        <div class="installment-badge">009</div>
+        <div class="product-img"><img src="https://myphone.kg/cache/files/14473.png_w800_h800_resize.png?t=1776009044" alt="Samsung Galaxy Tab A8 64" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#e8ddd0"></span>
+          <span class="dot-color" style="background:#c0bab4"></span>
+          <span class="dot-color" style="background:#888"></span>
+        </div>
+        <div class="product-name">Samsung<br>Galaxy Tab A8 10.5</div>
+        <div class="product-storage">64Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">23 990 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
+      <div class="product-card">
+        <div class="badge-gift">Case original as a gift!</div>
+        <div class="badge-cashback">CASH<br>BACK</div>
+        <div class="installment-badge">009</div>
+        <div class="product-img"><img src="https://www.myphone.kg/cache/files/17695.webp_w800_h800_resize.webp?t=1775836724" alt="Samsung Galaxy A04s" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#222"></span>
+          <span class="dot-color" style="background:#fff;border:1px solid #ccc"></span>
+          <span class="dot-color" style="background:#cc6633"></span>
+        </div>
+        <div class="product-name">Samsung<br>Galaxy A04s</div>
+        <div class="product-storage">4+64Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">14 590 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
+      <div class="product-card">
+        <div class="badge-gift">Case original as a gift!</div>
+        <div class="badge-cashback">CASH<br>BACK</div>
+        <div class="installment-badge">009</div>
+        <div class="product-img"><img src="https://www.myphone.kg/cache/files/17678.jpg_w800_h800_resize.jpg?t=1775909867" alt="Samsung Galaxy A04" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#222"></span>
+          <span class="dot-color" style="background:#e8ddd0"></span>
+          <span class="dot-color" style="background:#cc6633"></span>
+          <span class="dot-color" style="background:#1a2a1a"></span>
+        </div>
+        <div class="product-name">Samsung<br>Galaxy A04</div>
+        <div class="product-storage">4+64Gb</div>
+        <div class="product-bottom">
+          <div class="product-price">12 490 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
+      <div class="product-card">
+        <div class="badge-credit">CREDIT</div>
+        <div class="product-img"><img src="https://www.myphone.kg/files/media/17/17467.webp" alt="Apple Watch 8" onerror="this.parentElement.style.background='#f0f0f0'"/></div>
+        <div class="product-colors">
+          <span class="dot-color" style="background:#e0e0e0"></span>
+          <span class="dot-color" style="background:#aaa"></span>
+          <span class="dot-color" style="background:#cc2222"></span>
+        </div>
+        <div class="product-name">Apple<br>Watch 8</div>
+        <div class="product-storage">41mm</div>
+        <div class="product-bottom">
+          <div class="product-price">41 990 <span>с</span></div>
+          <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+ 
     </div>
   </div>
  
   <div class="box7">
-    <div class="section-header">
-      <h3>Автобazar.kg</h3>
-      <a href="#">Все объявления &rsaquo;</a>
-    </div>
-    <div class="marketplace-stats">
-      <div class="stat-item">
-        <a href="#">Avtobazar.kg</a>
-        <span>17487 объявлений</span>
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <div class="logo-diamond small">МТ</div>
+        <span class="footer-brand">Мой телефон</span>
       </div>
-      <div class="stat-item">
-        <a href="#">Нанобаza.kg</a>
-        <span>1261 объявлений</span>
+      <div class="footer-links">
+        <a href="#">О компании</a>
+        <a href="#">Адреса салонов</a>
+        <a href="#">Акции</a>
+        <a href="#">Гарантия</a>
+        <a href="#">Доставка</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Кредит</a>
       </div>
-      <div class="stat-item">
-        <a href="#">Баналa</a>
-        <span>3040 объявлений</span>
-      </div>
-      <div class="stat-item">
-        <a href="#">AVTO TRADING</a>
-        <span>70 объявлений</span>
-      </div>
-      <div class="stat-item">
-        <a href="#">авторынок</a>
-        <span>139 объявлений</span>
-      </div>
-    </div>
-  </div>
- 
-  <div class="box8">
-    <div class="section-header">
-      <h3>Легковые авто</h3>
-      <div class="car-type-links">
-        <a href="#">Новые</a>
-        <a href="#">Все легковые авто &rsaquo;</a>
-      </div>
-    </div>
-    <div class="used-car-listings">
-      <div class="listing-card">
-        <div class="listing-img" style="background:#ddd;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/2019_Toyota_RAV4_Adventure_%28facelift%2C_red%29%2C_front_8.2.19.jpg/240px-2019_Toyota_RAV4_Adventure_%28facelift%2C_red%29%2C_front_8.2.19.jpg" alt="Toyota RAV4"/>
-        </div>
-        <div class="listing-info">
-          <p class="listing-name">Toyota RAV4 2019</p>
-          <p class="listing-price">$23,500</p>
-          <p class="listing-detail">2.5L · Автомат · Полный привод</p>
-        </div>
-      </div>
-      <div class="listing-card">
-        <div class="listing-img" style="background:#ddd;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2021_BMW_3_Series_330i_M_Sport_%28G20%2C_facelift%29%2C_front_8.1.21.jpg/240px-2021_BMW_3_Series_330i_M_Sport_%28G20%2C_facelift%29%2C_front_8.1.21.jpg" alt="BMW 3"/>
-        </div>
-        <div class="listing-info">
-          <p class="listing-name">BMW 3 Series 2021</p>
-          <p class="listing-price">$35,000</p>
-          <p class="listing-detail">2.0L · Автомат · Задний привод</p>
-        </div>
-      </div>
-      <div class="listing-card">
-        <div class="listing-img" style="background:#ddd;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2019_Mercedes-Benz_GLE_300d_%28W167%29_AMG_Line_4MATIC_auto%2C_front_8.21.19.jpg/240px-2019_Mercedes-Benz_GLE_300d_%28W167%29_AMG_Line_4MATIC_auto%2C_front_8.21.19.jpg" alt="Mercedes GLE"/>
-        </div>
-        <div class="listing-info">
-          <p class="listing-name">Mercedes GLE 2019</p>
-          <p class="listing-price">$48,000</p>
-          <p class="listing-detail">3.0L · Автомат · Полный привод</p>
+      <div class="footer-right">
+        <div class="footer-phone">313111</div>
+        <div class="footer-socials">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
         </div>
       </div>
     </div>
-  </div>
- 
-  <div class="box9">
-    <div class="footer-content">
-      <div class="footer-col">
-        <h4>Mashina.kg</h4>
-        <a href="#">О нас</a>
-        <a href="#">Контакты</a>
-        <a href="#">Реклама</a>
-      </div>
-      <div class="footer-col">
-        <h4>Помощь</h4>
-        <a href="#">FAQ</a>
-        <a href="#">Правила</a>
-        <a href="#">Безопасность</a>
-      </div>
-      <div class="footer-col">
-        <h4>Мы в соцсетях</h4>
-        <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-        <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-      </div>
-      <div class="footer-col">
-        <p style="font-size:12px; color:#999;">© 2024 Mashina.kg<br/>Все права защищены</p>
-      </div>
-    </div>
+    <div class="footer-copy">© 2024 Мой телефон. Все права защищены.</div>
   </div>
  
 </div>
  
 <script>
-
-  var currentStyle = 'style.css';
-  function switchStyle() {
-    var link = document.getElementById('styleSheet');
-    if (currentStyle === 'style.css') {
-      link.href = 'style2.css';
-      currentStyle = 'style2.css';
-    } else {
-      link.href = 'style.css';
-      currentStyle = 'style.css';
-    }
-  }
- 
-  var hamburgerBtn = document.getElementById('hamburgerBtn');
-  var mainMenu = document.getElementById('mainMenu');
-  hamburgerBtn.addEventListener('click', function() {
-    mainMenu.classList.toggle('mobileMenu');
-  });
+var hamburgerBtn = document.getElementById('hamburgerBtn');
+var mainMenu = document.getElementById('mainMenu');
+hamburgerBtn.addEventListener('click', function() {
+  mainMenu.classList.toggle('mobileMenu');
+});
 </script>
  
 </body>
 </html>
+ 
